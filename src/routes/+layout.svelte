@@ -10,9 +10,11 @@
 		<slot />
 	</main>
 
-	
+
+
 </div>
 
+<svelte:head>	
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0K4728KYSX"></script>
 <script>
@@ -21,7 +23,9 @@
   gtag('js', new Date());
 
   gtag('config', 'G-0K4728KYSX');
+  
 </script>
+</svelte:head>
 
 
 <style>
