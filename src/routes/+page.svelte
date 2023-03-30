@@ -1,7 +1,5 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+import me from '$lib/images/me.png';
 </script>
 
 <svelte:head>
@@ -11,21 +9,32 @@
 
 <section>
 	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
+	swhiteusa.com
+	<br/>
+<img src={me} alt="" />
 	</h1>
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
+	<p>
+		Welcome to my site, where you can see my social media, videos, and other unique technologies. If you enjoy my site, check out these other amazing locations.
+<br/>
+Technology:
+<br/>
+<a href="https://www.bleepingcomputer.com/" target="_blank"> https://www.bleepingcomputer.com/</a>
+<br/>
+Your new front page:
+<br/>
+<a href="https://www.reddit.com/" target="_blank">https://www.reddit.com/</a>
+<br/>
+CISA:
+<br/>
+<a href="https://www.cisa.gov/" target="_blank">https://www.cisa.gov/</a>
 
-	<Counter />
+​
+
+​
+	</p>
+
+	
 </section>
 
 <style>
@@ -39,21 +48,12 @@
 
 	h1 {
 		width: 100%;
+		font-family:Impact;
 	}
 
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
+	p {
+		text-align:center;
+		font-size: 2rem;
 	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
+	
 </style>
